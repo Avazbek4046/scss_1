@@ -1,0 +1,38 @@
+
+
+
+
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+
+    &_logo {
+        margin-left: 20px;
+    }
+
+    &_ul {
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+
+        &_list-item {
+            text-transform: uppercase;
+            list-style-type: none;
+
+            &--link {
+                text-decoration: none;
+                color: #000;
+            }
+
+            &_btn {
+                border: none;
+                padding: 6px 12px;
+            }
+        }
+    }
+}

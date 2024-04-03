@@ -1,0 +1,41 @@
+@import "./card";
+
+
+
+.intro {
+    width: 100%;
+
+    &_wrapper{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 40px;
+
+        .card{
+            // @extend %card;
+
+            @include custom-card (300px, 500px, $main-bg-orange, '0 0 10px 0 silver', 10px, 0);
+
+            &_image{
+                filter: brightness(0.8);
+                &:hover{
+                    filter: brightness(1);
+                }
+            }
+            &-body{
+                padding: 8px 10px;
+                
+            }
+           
+        }
+    }
+    &_box{
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+
+        .box{
+            @extend %card;
+        }
+    }
+}
